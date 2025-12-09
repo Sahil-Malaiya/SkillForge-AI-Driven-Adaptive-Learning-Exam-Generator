@@ -1,0 +1,161 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #333;
+  height: 100%;
+}
+
+/* Layout Container */
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: #1e1e2d;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 15px;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 12px;
+  margin-bottom: 25px;
+}
+
+.sidebar a {
+  color: #c7c7d1;
+  text-decoration: none;
+  padding: 12px 14px;
+  border-radius: 6px;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #4c4c69;
+  color: #fff;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 35px 50px;
+  background: #ffffff;
+  border-radius: 10px 0 0 10px;
+  overflow-y: auto;
+}
+
+.content h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+
+/* Card Layout (Reusable) */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056c7;
+}
+
+/* Login/Register Form */
+.form-container {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 18px;
+  border-radius: 6px;
+  border: 1px solid #c6c6c6;
+  font-size: 15px;
+}
+.mini-box {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  background: #f8f8f8;
+}
+.mini-box:hover {
+  background: #e6e6e6;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+.form-container p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
